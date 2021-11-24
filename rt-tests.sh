@@ -11,7 +11,7 @@ if [ $# -ne 1 ]; then
 fi
 
 # Run cyclictest
-if ! cyclictest -S -p99 -i1000 -m -D1m -h400 -q >output; then
+if ! cyclictest -S -p99 -i1000 -m -D30m -h400 -q >output; then
   echo "ERROR: cyclictest failed" >&2
   exit 1
 fi
