@@ -1,8 +1,10 @@
 container_name=rt-tests
 image_name=rt-tests
 
+
 check:
 	@[ "${label}" ] || ( echo "label is not set"; exit 1 )
+
 
 build-docker: 
 	cd ..; docker build -f rt-tests/Dockerfile -t $(image_name) . 
