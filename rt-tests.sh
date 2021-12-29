@@ -25,7 +25,7 @@ grep -v -e "^#" -e "^$" output | tr " " "\t" >histogram
 # Create two-column data sets with latency classes and frequency values for each core
 cores=$(grep -c ^processor /proc/cpuinfo)
 for i in `seq 1 $cores`
-do
+do   
   column=`expr $i + 1`
   cut -f1,$column histogram >histogram$i
 done
