@@ -16,6 +16,7 @@ if ! cyclictest -S -p99 -i1000 -m -D30m -h400 -q >output; then
   exit 1
 fi
 
+
 # Get maximum latency
 max=`grep "Max Latencies" output | tr " " "\n" | sort -n | tail -1 | sed s/^0*//`
 
