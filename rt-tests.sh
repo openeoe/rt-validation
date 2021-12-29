@@ -52,7 +52,7 @@ do
   if test $cpuno -lt 10
   then
     title=" CPU$cpuno"
-   else
+   else 
     title="CPU$cpuno"
   fi
   echo -n "\"histogram$i\" using 1:2 title \"$title\" with histeps" >>plotcmd
