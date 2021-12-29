@@ -31,6 +31,7 @@ do
   cut -f1,$column histogram >histogram$i
 done
 
+
 # Create plot command header
 echo -n -e "set title \"Latency Plot ($1)\"\n\
 set terminal png\n\
