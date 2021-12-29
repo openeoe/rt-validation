@@ -8,4 +8,4 @@ RUN apt-get update \
  
 COPY ./rt-tests.sh /rt-tests.sh
 
-CMD ["sh", "-c", "/rt-tests.sh ${label}"]
+CMD ["sh", "-c", "/rt-tests.sh ${label}"] 
