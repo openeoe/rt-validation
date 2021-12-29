@@ -58,6 +58,7 @@ do
   echo -n "\"histogram$i\" using 1:2 title \"$title\" with histeps" >>plotcmd
 done
 
+
 # Execute plot command
 gnuplot -persist <plotcmd
 
